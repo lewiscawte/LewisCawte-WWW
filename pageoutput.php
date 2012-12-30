@@ -5,8 +5,8 @@ class pageOutput {
 	public function prepareContent() {
 		global $enabledPages;
 		
-		foreach ( $enabledPages as $page ) {
-			$outputTitle = "<title>Lewis Cawte :: Home | " . ucfirst( strtolower( $page ) ) . "</title>";
+		foreach ( $enabledPages as $pageout ) {
+			$outputTitle = "<title>Lewis Cawte :: Home | " . ucfirst( strtolower( $pageout ) ) . "</title>";
 		}
 	}
 }

@@ -8,9 +8,9 @@ eg: $assetsPath = "http://assets.lewiscawte.me/lewiscawte/beta/www";
 /***
 Enabled Pages - what pages will be enabled on your site.
 ***/
-$enabledPages = array( "index", "sitemap", "copyrights" );
+$enabledPages = array( "index", "sitemap", "copyrights", "error" );
 
 /***
 Page Content Location - location of file defining variables of pages.
 ***/
-$pagecontentPath = "pagecontent/$pagename.php";
+//$pagecontentPath = "pagecontent/$pagename.php";
