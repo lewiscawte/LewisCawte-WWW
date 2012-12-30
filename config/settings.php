@@ -11,6 +11,6 @@ Enabled Pages - what pages will be enabled on your site.
 $enabledPages = array( "index", "sitemap", "copyrights", "error" );
 
 /***
-Page Content Location - location of file defining variables of pages.
+Page Content Location - location of file defining variables of pages. Directory is considered from the location of index.php.
 ***/
-//$pagecontentPath = "pagecontent/$pageout.txt";
+//$pagecontentPath = "pagecontents";
