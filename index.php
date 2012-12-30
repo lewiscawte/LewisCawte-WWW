@@ -1,10 +1,9 @@
 <?php
 require_once( "config/settings.php" );
-require_once( "pageoutput.php" );
 
-$page = $_REQUEST['page'];
+$page = strtolower( $_REQUEST['page'] );
 
-if ( $page ) {
+if ( isset ( $page ) ) {
 	if ( in_array( $page, $enabledPages ) ) {
 		$pageout = $page;
 	}
@@ -15,15 +14,16 @@ if ( $page ) {
 else {
 	$pageout = "index";
 }
+require_once( "pageoutput.php" );
 ?>
 
 <!DOCTYPE>
 <html>
         <head>
-			<?php $outputTitle ?>
-			<link href="<?php echo( $assetsPath ) ?>/styles/index.css" type="text/stylesheet" rel="stylesheet" />
+			<?php echo( $outputTitle ) ?>
+			<link href="<?php echo( $assetsPath ) ?>/styles/index.css" type="text/css" rel="stylesheet" />
         </head>
         <body>
-        	<?php $outputContent ?>
+        	<?php echo( $outputContent ) ?>
         </body>
 </html>
