@@ -13,4 +13,4 @@ $enabledPages = array( "index", "sitemap", "copyrights", "error" );
 /***
 Page Content Location - location of file defining variables of pages.
 ***/
-//$pagecontentPath = "pagecontent/$pagename.php";
+//$pagecontentPath = "pagecontent/$pageout.txt";

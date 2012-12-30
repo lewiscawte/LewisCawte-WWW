@@ -1,9 +1,8 @@
 <?php
 require_once( "config/settings.php" );
 
-$page = strtolower( $_REQUEST['page'] );
-
-if ( isset ( $page ) ) {
+if ( isset ( $_REQUEST['page'] ) ) {
+	$page = strtolower( $_REQUEST['page'] );
 	if ( in_array( $page, $enabledPages ) ) {
 		$pageout = $page;
 	}
